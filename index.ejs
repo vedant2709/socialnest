@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Project 3</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <div class="w-full min-h-screen bg-zinc-900 flex justify-center items-center flex-col gap-10 text-white">
+    <h1 class="text-4xl font-bold">Create New Account</h1>
+    <form action="/register" method="post" class="w-1/4 h-full flex flex-col gap-3 text-white">
+      <input type="text" placeholder="name" name="name" class="px-2 py-1 border-2 border-zinc-600 text-lg outline-none bg-transparent rounded-md">
+      <input type="text" placeholder="username" name="username" class="px-2 py-1 border-2 border-zinc-600 text-lg outline-none bg-transparent rounded-md">
+      <input type="password" placeholder="password" name="password" class="px-2 py-1 border-2 border-zinc-600 text-lg outline-none bg-transparent rounded-md">
+      <input type="email" placeholder="email" name="email" class="px-2 py-1 border-2 border-zinc-600 text-lg outline-none bg-transparent rounded-md">
+      <input type="number" placeholder="age" name="age" class="px-2 py-1 border-2 border-zinc-600 text-lg outline-none bg-transparent rounded-md">
+      <input type="submit" value="Register" class="px-3 py-2 bg-blue-500 text-lg w-1/2 rounded-md mx-auto font-semibold cursor-pointer">
+    </form>
+    <div class="flex justify-center gap-3 w-1/4 font-semibold">
+      <h5>Already Have an Account?</h5>
+      <a href="/login" class="underline">Login</a>
+    </div>
+  </div>
+</body>
+</html>
